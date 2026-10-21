@@ -1,0 +1,44 @@
+# ── Ghostty · tema Neon Slate (troque "theme" por mezzanotte p/ azul+ouro) ──
+# Recarregar sem fechar: Cmd+Shift+,
+
+# Cores
+theme = neon-slate
+
+# Fonte (JetBrains Mono já vem embutida, com ícones Nerd Font)
+font-family = JetBrains Mono
+font-size = 15
+font-thicken = true
+adjust-cell-height = 12%
+
+# Vidro fosco
+background-opacity = 0.80
+background-blur = 10
+unfocused-split-opacity = 0.80
+
+# Janela
+macos-titlebar-style = tabs
+window-padding-x = 18
+window-padding-y = 14
+window-padding-balance = true
+window-padding-color = extend
+window-width = 132
+window-height = 38
+window-save-state = always
+
+# Cursor + animações por tecla (Enter, apagar, espaço)
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+custom-shader = ~/.config/ghostty/shaders/key_effects.glsl
+custom-shader-animation = true
+
+# Conforto
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+macos-option-as-alt = true
+confirm-close-surface = false
+
+# Terminal "drop-down" de qualquer lugar: Cmd+`
+quick-terminal-position = top
+quick-terminal-animation-duration = 0.15
+keybind = global:cmd+grave_accent=toggle_quick_terminal

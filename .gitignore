@@ -1,0 +1,6 @@
+.DS_Store
+# gerados pelo instalador
+ghostty/welcome/clawd-frames.bin
+ghostty/welcome/clawd-logo.txt
+ghostty/keysound/keysoundd
+ghostty/keysound/keysound-ghost

@@ -1,0 +1,178 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file-raw",
+    "source": "~/.config/ghostty/welcome/clawd-logo.txt",
+    "width": 46,
+    "height": 21,
+    "padding": {
+      "left": 2,
+      "right": 4,
+      "top": 0
+    }
+  },
+  "display": {
+    "separator": " ",
+    "color": {
+      "keys": "38;2;217;119;87",
+      "output": "38;2;220;224;232"
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "·"
+      },
+      "width": 8,
+      "border": {
+        "left": "",
+        "right": ""
+      }
+    },
+    "percent": {
+      "type": 3
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{#1}{#38;2;217;119;87}✻ {#38;2;230;230;230}{user-name}{#38;2;125;133;144} @ {#38;2;46;196;182}{host-name}"
+    },
+    {
+      "type": "command",
+      "key": "  ✻ Claude Code",
+      "keyColor": "38;2;217;119;87",
+      "text": "claude --version 2>/dev/null | cut -d' ' -f1",
+      "format": "v{result} {#38;2;125;133;144}pronto pra codar"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "{#38;2;217;119;87}╭───{#1} 󰌢 Hardware {#0}{#38;2;217;119;87}─────────────────────────────────╮"
+    },
+    {
+      "type": "host",
+      "key": "├ 󰌢 Mac      ",
+      "keyColor": "38;2;217;119;87",
+      "format": "{name}"
+    },
+    {
+      "type": "cpu",
+      "key": "├  CPU      ",
+      "keyColor": "38;2;217;119;87",
+      "format": "{name} ({cores-physical} núcleos)"
+    },
+    {
+      "type": "gpu",
+      "key": "├ 󰢮 GPU      ",
+      "keyColor": "38;2;217;119;87",
+      "format": "{name} · {core-count} núcleos"
+    },
+    {
+      "type": "memory",
+      "key": "├ 󰍛 Memória  ",
+      "keyColor": "38;2;217;119;87",
+      "format": "{percentage-bar} {used} / {total}"
+    },
+    {
+      "type": "disk",
+      "key": "├ 󰋊 Livre    ",
+      "keyColor": "38;2;217;119;87",
+      "format": "{size-percentage-bar} {size-free} livres de {size-total}",
+      "folders": "/"
+    },
+    {
+      "type": "battery",
+      "key": "├ 󰁹 Bateria  ",
+      "keyColor": "38;2;217;119;87",
+      "format": "{capacity-bar} {capacity}{?time-hours} · {time-hours}h{time-minutes}min restantes{?}"
+    },
+    {
+      "type": "custom",
+      "format": "{#38;2;217;119;87}╰────────────────────────────────────────────────╯"
+    },
+    {
+      "type": "custom",
+      "format": "{#38;2;198;120;221}╭───{#1}  Software {#0}{#38;2;198;120;221}─────────────────────────────────╮"
+    },
+    {
+      "type": "os",
+      "key": "├  Sistema  ",
+      "keyColor": "38;2;198;120;221",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "packages",
+      "key": "├ 󰏗 Pacotes  ",
+      "keyColor": "38;2;198;120;221",
+      "format": "{brew} brew · {brew-cask} apps"
+    },
+    {
+      "type": "shell",
+      "key": "├  Shell    ",
+      "keyColor": "38;2;198;120;221",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "terminal",
+      "key": "├  Terminal ",
+      "keyColor": "38;2;198;120;221",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "uptime",
+      "key": "├ 󰔟 Ligado há",
+      "keyColor": "38;2;198;120;221",
+      "format": "{?days}{days}d {?}{hours}h {minutes}min"
+    },
+    {
+      "type": "custom",
+      "format": "{#38;2;198;120;221}╰────────────────────────────────────────────────╯"
+    },
+    {
+      "type": "custom",
+      "format": "{#38;2;46;196;182}╭───{#1} 󰖩 Conexão & agora {#0}{#38;2;46;196;182}──────────────────────────╮"
+    },
+    {
+      "type": "wifi",
+      "key": "├ 󰖩 Wi-Fi    ",
+      "keyColor": "38;2;46;196;182",
+      "format": "{ssid} · {band} GHz · sinal {signal-quality}"
+    },
+    {
+      "type": "localip",
+      "key": "├ 󰌗 IP local ",
+      "keyColor": "38;2;46;196;182",
+      "format": "{ipv4}",
+      "showIpv4": true,
+      "showIpv6": false,
+      "showMac": false
+    },
+    {
+      "type": "sound",
+      "key": "├ 󰕾 Som      ",
+      "keyColor": "38;2;46;196;182",
+      "format": "{name} · {volume-percentage}"
+    },
+    {
+      "type": "media",
+      "key": "├ 󰝚 Tocando  ",
+      "keyColor": "38;2;46;196;182",
+      "format": "{?artist}{artist} - {?}{title}"
+    },
+    {
+      "type": "brightness",
+      "key": "├ 󰃟 Brilho   ",
+      "keyColor": "38;2;46;196;182",
+      "format": "{percentage}"
+    },
+    {
+      "type": "custom",
+      "format": "{#38;2;46;196;182}╰────────────────────────────────────────────────╯"
+    },
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 18
+    }
+  ]
+}

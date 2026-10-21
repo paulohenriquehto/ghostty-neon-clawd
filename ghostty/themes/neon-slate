@@ -1,0 +1,23 @@
+# Neon Slate — fundo grafite com cores vivas (combina com o prompt)
+background = #22262f
+foreground = #dce0e8
+cursor-color = #e05d8c
+cursor-text = #22262f
+selection-background = #3b4252
+selection-foreground = #ffffff
+palette = 0=#2c313c
+palette = 1=#ff6b6b
+palette = 2=#a8e063
+palette = 3=#f6d365
+palette = 4=#5b9bff
+palette = 5=#c678dd
+palette = 6=#2ec4b6
+palette = 7=#c8ccd4
+palette = 8=#5c6370
+palette = 9=#ff8787
+palette = 10=#c3f08a
+palette = 11=#ffe08a
+palette = 12=#82b4ff
+palette = 13=#e09bf0
+palette = 14=#5fe0d3
+palette = 15=#ffffff

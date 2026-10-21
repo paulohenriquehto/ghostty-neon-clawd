@@ -1,0 +1,23 @@
+# Mezzanotte — azul meia-noite com detalhes em ouro
+background = #12131c
+foreground = #e6dfcf
+cursor-color = #d4af37
+cursor-text = #12131c
+selection-background = #3a3322
+selection-foreground = #f5efe0
+palette = 0=#1c1d29
+palette = 1=#e06c75
+palette = 2=#98c379
+palette = 3=#e5c07b
+palette = 4=#6c8cd5
+palette = 5=#b78bd6
+palette = 6=#5fb3b3
+palette = 7=#c8c1b0
+palette = 8=#4a4b5e
+palette = 9=#ff8a92
+palette = 10=#b5e08f
+palette = 11=#f2d49b
+palette = 12=#8fa9ef
+palette = 13=#d0a8ef
+palette = 14=#85d0d0
+palette = 15=#f5efe0

@@ -1,0 +1,81 @@
+# Starship · estilo powerline colorido (degradê roxo → rosa → laranja → azul)
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = "neon"
+add_newline = true
+
+format = """
+[](fg:purple)$username\
+[](fg:purple bg:pink)$directory\
+[](fg:pink bg:orange)[](fg:orange bg:teal)[](fg:teal bg:blue)[](fg:blue) \
+$git_branch$git_status$nodejs$python$rust$golang$cmd_duration$time
+$character"""
+
+[palettes.neon]
+purple = "#8e44ad"
+pink   = "#e05d8c"
+orange = "#f39c6b"
+teal   = "#2ec4b6"
+blue   = "#3a86ff"
+text   = "#ffffff"
+dark   = "#1b1e25"
+yellow = "#f6d365"
+green  = "#a8e063"
+red    = "#ff6b6b"
+muted  = "#7d8590"
+
+[username]
+show_always = true
+style_user = "fg:text bg:purple bold"
+style_root = "fg:yellow bg:purple bold"
+format = "[   $user ]($style)"
+
+[directory]
+style = "fg:text bg:pink bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "~"
+
+[git_branch]
+symbol = ""
+style = "fg:yellow bold"
+format = "[$symbol $branch]($style) "
+
+[git_status]
+style = "fg:red"
+format = "[($all_status$ahead_behind )]($style)"
+modified = "●"
+untracked = "?"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+staged = "[+](fg:green)"
+
+[nodejs]
+symbol = "\ue718"
+format = "[$symbol $version](fg:green) "
+
+[python]
+symbol = "\ue606"
+format = "[$symbol $version( \\($virtualenv\\))](fg:yellow) "
+
+[rust]
+symbol = "\ue7a8"
+format = "[$symbol $version](fg:orange) "
+
+[golang]
+symbol = "\ue627"
+format = "[$symbol $version](fg:teal) "
+
+[cmd_duration]
+min_time = 2000
+format = "[󱦟 $duration](fg:muted)"
+
+[character]
+success_symbol = "[❯](bold teal)"
+error_symbol = "[❯](bold red)"
+
+[time]
+disabled = false
+time_format = "%H:%M"
+format = " [  $time](fg:muted)"
